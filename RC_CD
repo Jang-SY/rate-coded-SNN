@@ -1,0 +1,31 @@
+# Rate-coded
+# Spike-based DBN
+# version 0.0.1
+# Mazdak Fatahi et al., Rate-coded DBN: An online strategy for spike-based deep belief networks
+
+import numpy as np
+import math as m
+from matplotlib import pyplot as plt
+import cv_mnist as cv
+
+class RC_CD:
+    def __init__(self, tot_time, tot_num, n_vis = 784, n_hid = 500, weight = None):
+        self.tot_time = tot_time
+        if tot_num > tot_time:
+            print('tot_num이 tot_time보다 작아야합니다.')
+            exit()
+        else:
+            self.tot_num = tot_num  # tot_time / tot_num = time window
+        self.n_vis = n_vis
+        self.n_hid = n_hid
+        if weight == None:
+            weight = np.ones((n_vis, n_hid),dtype = float)*0.5  #weight element를 각각 0.5로 초기화
+
+    def mnist2spk(self, file_name, n_vis):
+        n_vis = self.n_vis
+        frequency
+        continue:
+
+
+if __name__ == "__main__":     
+    cd = RC_CD(20,10)
