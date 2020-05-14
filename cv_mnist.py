@@ -55,4 +55,4 @@ class cv_mnist:
 if __name__ == "__main__":
     mnist = cv_mnist("t10k-images.idx3-ubyte","t10k-labels.idx1-ubyte", 10)
     mnist.flie2txt("mnist_test.txt")
-    arr = mnist.str2int("mnist_test.txt")
+    arr = mnist.str2num("mnist_test.txt")
